@@ -106,7 +106,9 @@ class Client():
         self.login = log
         self.password = pas
         self.api_key = api_key
-
+        self.cst = ""
+        self.x_security_token = ""
+        
         self.session = requests.Session()
         self.response = self.session.post(
             CapitalComConstants.SESSION_ENDPOINT,
